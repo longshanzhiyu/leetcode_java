@@ -29,19 +29,19 @@ public class Solution121Test {
     @Test
     public void testFluctuatingPrices2() {
         int[] prices = {7, 1, 5, 3, 6, 4};
-        assertEquals(7, Solution121.advanceMaxProfitI(prices));
+        assertEquals(7, Solution121.advanceMaxProfitIII(prices));
     }
 
     @Test
     public void testFluctuatingPrices3() {
         int[] prices = {7, 6, 4, 3, 1};
-        assertEquals(0, Solution121.advanceMaxProfitII(prices));
+        assertEquals(0, Solution121.advanceMaxProfitIII(prices));
     }
 
     @Test
     public void testFluctuatingPrices4() {
         int[] prices = {1, 2, 3, 4, 5};
-        assertEquals(4, Solution121.advanceMaxProfitII(prices));
+        assertEquals(4, Solution121.advanceMaxProfitIII(prices));
     }
 
 }

@@ -38,6 +38,7 @@ public class Solution121 {
         return maxProfit;
     }
 
+    // 122
     public static int advanceMaxProfitI(int[] prices) {
         if (prices == null || prices.length == 0) {
             return 0;
@@ -67,6 +68,18 @@ public class Solution121 {
             dp1 = Math.max(dp1, dp0 - prices[i]);
         }
         return dp0;
+    }
+
+    public static int advanceMaxProfitIII(int[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+
+        int n = prices.length, ans = 0;
+        for (int i = 1; i < n; ++i) {
+            ans += Math.max(0, prices[i] - prices[i - 1]);
+        }
+        return ans;
     }
 
 }
