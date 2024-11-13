@@ -2,8 +2,7 @@ package com.longshanzhiyu.Array.leetcode380;
 
 import java.util.*;
 
-public class RandomizedSet {
-
+class RandomizedSet {
     List<Integer> nums;
     Map<Integer, Integer> indices;
     Random random;
@@ -38,6 +37,9 @@ public class RandomizedSet {
     }
 
     public int getRandom() {
+        if (nums.isEmpty()) {
+            return -1;
+        }
         int randomIndex = random.nextInt(nums.size());
         return nums.get(randomIndex);
     }
