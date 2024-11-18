@@ -105,7 +105,7 @@ public class Solution151 {
             ++left;
         }
         d.offerFirst(word.toString());
-        
+
         return String.join(" ", d);
     }
 }
